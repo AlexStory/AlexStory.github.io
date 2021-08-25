@@ -1,0 +1,23 @@
+{% if not titleBar %}
+{% set titleBar = "Alex Story" %}
+{% endif %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ titleBar }}</title>
+  <link rel="stylesheet" href="/main.css">
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-200">
+  {% include "partials/header.html" %}
+  <main class="container mx-auto px-4">{% block content %}{% endblock %}</main>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Story</title>
+  <link rel="stylesheet" href="/main.css">
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-200">
+  <header role="banner">
+  <nav class="navbar shadow border-b border py-4 mb-10 bg-white" role="navigation" aria-label="main navigation">
+    <div class="container flex justify-between mx-auto px-4">
+
+      <div>
+        <a href="/" class="text-2xl">Alex<span class="font-thin">Story</span></a>
+      </div>
+
+      <div>
+        <a href="/blog" class="capitalize font-semibold hover:underline mx-2">blog</a>
+        <a href="/projects" class="capitalize font-semibold hover:underline">projects</a>
+      </div>
+    </div>
+  </nav>
+</header>
+  <main class="container mx-auto px-4">
+<div class="bg-white py-4 px-4 shadow">
+
+  <h1 class="capitalize my-2">starting with alpine</h1>
+  <hr class="my-2" />
+
+  <h2>Why alpine?</h2>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">x-data</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{count: 0}<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>count++<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>click<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">x-text</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>count<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<div x-data="{count: 0}">
+  <button @click="count++" class="border px-2 border-black rounded">click</button>
+  <span>count: </span><span x-text="count">
+</div>
+</div>
+</main>
+</body>
+
+</html>
