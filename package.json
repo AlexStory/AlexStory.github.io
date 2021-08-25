@@ -9,7 +9,7 @@
     "dev:run": "eleventy --serve",
     "dev:css": "tailwindcss -i ./src/assets/main.css -o dist/main.css --watch",
     "prod:css": "NODE_ENV=production tailwindcss -i ./src/assets/main.css -o docs/main.css --minify",
-    "prod:build": "NODE_ENV=production eleventy",
+    "prod:build": "NODE_ENV=production eleventy --output=./docs",
     "build": "npm-run-all prod:build prod:css"
   },
   "repository": {
