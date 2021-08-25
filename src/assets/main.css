@@ -5,9 +5,11 @@
 @layer base {
   h1 {
     @apply text-2xl;
+    @apply py-2;
   }
 
   h2{ 
     @apply text-xl;
+    @apply py-2;
   }
 }
