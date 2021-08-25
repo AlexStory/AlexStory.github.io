@@ -1,0 +1,27 @@
+---
+layout: layouts/blank
+---
+
+<h1>Contact</h1>
+
+<p class="mb-4">
+  Have a question? Want to see about some work?
+  <br />
+  Contact me below, and I'll try and get back with you.
+</p>
+
+<form name="contact" netlify>
+  <label class="block">
+    <span>Name</span>
+    <input type="text" placeholder="name" name="name" class="mt-1 block w-full" required>
+  </label class="block">
+  <label>
+    <span>Email</span>
+    <input type="email" placeholder="email" name="email" class="mt-1 block w-full" required />
+  </label>
+  <label class="block">
+    <span>Message</span>
+    <textarea name="message" placeholder="message" class="mt-1 block w-full" required></textarea>
+  </label>
+  <input type="submit" value="submit" class="bg-red-500 text-white capitalize px-2 py-2 mt-4 cursor-pointer" />
+</form>
