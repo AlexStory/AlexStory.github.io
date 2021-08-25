@@ -1,7 +1,7 @@
 {% extends "layouts/base.html" %}
 
 {% block content %}
-<div class="container mx-auto px-4">
+<div class="container mx-auto px-4 mb-10">
   <div class="bg-white py-4 px-4 shadow">
 
     <h1 class="capitalize my-2">{{ title }}</h1>
@@ -10,4 +10,8 @@
     {{ content | safe }}
   </div>
 </div>
+
+{% include "partials/latest-post.html" %}
+{% include "partials/about.html" %}
+{% include "partials/tech-stack.html" %}
 {% endblock %}
