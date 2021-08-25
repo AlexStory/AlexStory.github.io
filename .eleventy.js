@@ -16,7 +16,7 @@ module.exports = config => {
     return collection.getFilteredByGlob('./src/projects/*.md')
   })
 
-  config.addPassthroughCopy('./**/*.png')
+  config.addPassthroughCopy('./src/**/*.png')
   config.addPassthroughCopy('./src/.nojekyll')
 
   return {

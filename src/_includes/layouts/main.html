@@ -1,11 +1,12 @@
 {% extends "layouts/base.html" %}
 
 {% block content%}
-<div class="bg-white px-4 py-4 shadow">
+<div class="container mx-auto px-4 mb-10">
   {{ content | safe}}
-
-  {% include "partials/recent-posts.html" %}
 </div>
 
+{% include "partials/latest-post.html" %}
+{% include "partials/about.html" %}
+{% include "partials/tech-stack.html" %}
 
 {% endblock %}

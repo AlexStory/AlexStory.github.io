@@ -1,5 +1,5 @@
 ---
-layout: layouts/blank
+layout: layouts/main
 pagination:
   data: collections.posts
   size: 10
@@ -14,7 +14,7 @@ paginationNextText: 'Older posts'
   {% for tag in item.data.tags %}
   <span class="bg-gray-200 rounded-full px-2 py-1">{{ tag }}</span>
   {% endfor %}
-  <p>{{ item.data.summary }}</p>
-  <a href="{{ item.url }}" class="underline" >read now </a>
+  <p class="mb-2">{{ item.data.summary }}</p>
+  <a href="{{ item.url }}" class="bg-red-500 text-white px-2 py-2" >Continue Reading</a>
 </div>
 {% endfor %}
