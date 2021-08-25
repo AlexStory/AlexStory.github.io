@@ -8,7 +8,7 @@
     "start": "npm-run-all --parallel dev:*",
     "dev:run": "eleventy --serve",
     "dev:css": "tailwindcss -i ./src/assets/main.css -o dist/main.css --watch",
-    "prod:css": "NODE_ENV=production tailwindcss -o dist/main.css --minify",
+    "prod:css": "NODE_ENV=production tailwindcss -o docs/main.css --minify",
     "prod:build": "NODE_ENV=production eleventy",
     "build": "npm-run-all prod:build prod:css"
   },
