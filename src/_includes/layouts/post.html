@@ -5,7 +5,14 @@
   <div class="bg-white py-4 px-4 shadow">
 
     <h1 class="text-3xl capitalize my-2">{{ title }}</h1>
-    <hr class="my-2" />
+    <h2>{{ page.date | prettyDate }}</h2>
+    <div>
+      {%- for tag in tags %}
+      <span class="bg-gray-200 rounded-full px-2 py-1">{{ tag }}</span>
+      {% endfor %}
+    </div>
+
+    <hr class="my-4" />
 
     {{ content | safe }}
   </div>
