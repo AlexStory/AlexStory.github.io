@@ -4,12 +4,7 @@ module.exports = {
     "./src/**/*.md",
   ],
   darkMode: false, // or 'media' or 'class'
-  theme: {
-    fontFamily: {
-      'sans': ["Open Sans", "Helvetica", "Arial", "Sans-Serif"]
-    },
-    extend: {},
-  },
+  theme: {},
   variants: {
     extend: {},
   },
