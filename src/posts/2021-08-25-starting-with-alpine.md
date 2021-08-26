@@ -13,7 +13,7 @@ Alpinejs is an extremely lightweight javascript framework that makes it super si
 
 Alpine is super lightweight, so you can add it with a single script instead of needing an entire build process.
 Alpine is _NOT_ an SPA framework. It's more of a modern alternative to jQuery than a competitor to react.
-I find its perfect place to be on sites where you don't want a whole SPA (as most sites do not need one), so it fits nicely with a webserver based app, line one built with Django or Phoenix. Its small size also makes it great for statically rendered sites like this one.
+I find its perfect place to be on sites where you don't want a whole SPA (as most sites do not need one), so it fits nicely with a webserver based app, like one built with Django or Phoenix. Its small size also makes it great for statically rendered sites like this one.
 
 
 # Getting Started
@@ -92,7 +92,7 @@ You can try this code below:
 # A Bigger Example
 ---
 
-For a slightly larger example, to showcase one more important bit of functionality we will build a todo list.
+As a slightly larger example, to showcase one more important bit of functionality we will build a todo list.
 
 ## Component Functions
 
@@ -174,7 +174,7 @@ function todoApp() {
 ## Sub-methods
 
 Several Alpine attributes have sub-methods to allow additional functionality.
-A helpful one is `@click.prevent` which adds `event.preventDefault()` to your click handler automatically so that form won't refresh your page for instance.
+A helpful one is `@click.prevent` which adds `event.preventDefault()` to your click handler automatically so that, for instance, a form won't refresh your page for instance.
 
 ```html
 <div x-data="todoApp()">
