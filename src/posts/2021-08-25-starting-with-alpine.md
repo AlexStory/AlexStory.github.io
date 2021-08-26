@@ -1,7 +1,7 @@
 ---
 title: starting with alpine
-tags: 'alpine'
-summary: 'Alpine is a great, lightweight javascript library, and very simple to use. Here we will look at the very basics to get started withi it.'
+tags: ['alpine', 'javascript']
+summary: 'Alpine is a great, lightweight javascript library, and very simple to use. Here we will look at the very basics to get started with it.'
 ---
 # What Is Alpine?
 
@@ -42,7 +42,7 @@ The primary way of using alpine is through attribute tags. The one that turns an
 </div>
 ```
 
-With that, anything inside the div will be monitored by alppine, and be able to access the data.
+With that, anything inside the div will be monitored by alpine, and be able to access the data.
 
 ## x-text
 ---
@@ -176,7 +176,6 @@ function todoApp() {
 Several Alpine attributes have sub-methods to allow additional functionality.
 A helpful one is `@click.prevent` which adds `event.preventDefault()` to your click handler automatically so that form won't refresh your page for instance.
 
-```html
 ```html
 <div x-data="todoApp()">
   <input placeholder="todo..." x-model="newTodo" />

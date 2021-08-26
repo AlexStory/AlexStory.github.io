@@ -17,7 +17,6 @@ module.exports = config => {
   })
 
   config.addPassthroughCopy('./src/**/*.png')
-  config.addPassthroughCopy('./src/.nojekyll')
 
   return {
     markdownTemplateEngine: 'njk',
