@@ -9,7 +9,9 @@ module.exports = config => {
   config.addFilter('prettyDate', prettyDate)
 
   config.addCollection('posts', collection => {
-    return collection.getFilteredByGlob("./src/posts/*.md")
+    return collection.getFilteredByGlob("./src/posts/*.md").sort(function (a, b) {
+      return b.date - a.date
+    })
   })
 
   config.addCollection('projects', collection => {
