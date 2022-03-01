@@ -10,7 +10,7 @@ I'm not really sure. I was reading through an older F# book that made a lot of s
 
 # Getting Started
 
-So we are going to assume that you already have dotnet core installed on your machine. If not head over [asp.net]("https://asp.net") and get it.
+So we are going to assume that you already have dotnet core installed on your machine. If not head over [asp.net](https://asp.net) and get it.
 
 First just make a new F# console app.
 
